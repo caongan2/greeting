@@ -20,4 +20,16 @@ Route::get('/greeting/{name?}', function ($name= null) {
         echo 'Welcome to Laravel';
     }
 });
-Route::name('hieu2');
+
+Route::get("/login", function (){
+   return view('login');
+});
+
+Route::post('/login', function (Illuminate\Http\Request $request) {
+    if ($request->username == 'hieu'
+    && $request->password == '123') {
+        return view('welcome_login');
+    } else {
+        return view('error');
+    }
+});
