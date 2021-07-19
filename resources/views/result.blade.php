@@ -8,6 +8,7 @@
     <title>Result</title>
 </head>
 <body>
+@csrf
 <p>Product: {{$product}}</p>
 <p>List Price: {{$price}}</p>
 <p>Discount Amount: {{$result}}</p>

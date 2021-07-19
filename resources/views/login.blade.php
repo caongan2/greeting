@@ -1,10 +1,7 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
 </head>
 <body>
@@ -12,13 +9,13 @@
 <form action="/login" method="post">
     @csrf
     <p>
-        <input type="text" name="username">
+        <input type="text" name="username" placeholder="Tên đăng nhập">
     </p>
     <p>
-        <input type="password" name="password">
+        <input type="password" name="password" placeholder="Mật khẩu">
     </p>
     <p>
-        <button type="submit">Login</button>
+        <button type="submit">Đăng nhập</button>
     </p>
 </form>
 </body>

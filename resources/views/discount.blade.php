@@ -8,6 +8,7 @@
     <title>Product Discount</title>
 </head>
 <body>
+
 <h1>Product Discount</h1>
 <form action="/discount" method="post">
     @csrf
@@ -21,7 +22,7 @@
         <input type="number" name="percent" placeholder="Discount Percent">
     </p>
     <p>
-        <button type="submit">Submit</button>
+        <button type="submit">submit</button>
     </p>
 </form>
 </body>
